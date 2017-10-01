@@ -10,9 +10,9 @@ class AvitoSpider(scrapy.Spider):
     start_urls = [
         # 'http://www.avito.ru/cherepovets',
         'http://www.avito.ru/cherepovets/dlya_biznesa',
-        # 'http://www.avito.ru/cherepovets',
-        # 'http://www.avito.ru/cherepovets',
-        # 'http://www.avito.ru/cherepovets',
+        'http://www.avito.ru/cherepovets/rabota',
+        'http://www.avito.ru/cherepovets/uslugi',
+        'http://www.avito.ru/cherepovets/zhivotnye',
         # 'http://www.avito.ru/cherepovets',
     ]
 

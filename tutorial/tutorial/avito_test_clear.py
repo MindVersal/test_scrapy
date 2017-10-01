@@ -20,8 +20,8 @@ def clear_avito_json(json_file):
                 avito_unic_urls.append(t_p_url)
                 avito_json_clear.append(t_p_clear)
 
-    for item in avito_json_clear:
-        print(item)
+    # for item in avito_json_clear:
+    #     print(item)
     print('\nCount items: {}'.format(len(avito_json_clear)))
     with open('./data/{}_clear.json'.format(json_file), 'w', encoding='utf-8') as f:
         json.dump(avito_json_clear, f, ensure_ascii=False)

@@ -11,7 +11,7 @@ def clear_old_avito_json():
 
 
 if __name__ == '__main__':
-    file_name = 'avito_all'
+    file_name = 'avito'
     # command = 'scrapy runspider ./spiders/avito.py -o ./data/avito.json'
     command = 'avito.bat'
     clear_old_avito_json()

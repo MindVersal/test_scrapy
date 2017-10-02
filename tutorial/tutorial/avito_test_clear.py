@@ -29,5 +29,5 @@ def clear_avito_json(json_file):
 
 if __name__ == '__main__':
     print('Testing charset')
-    clear_avito_json('avito_buisness')
+    clear_avito_json('avito')
     print()

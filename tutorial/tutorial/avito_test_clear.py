@@ -1,7 +1,7 @@
 import json
 
 
-def clear_avito_json(json_file):
+def clear_avito_json(json_file, utf=True):
     with open('./data/avito.json', 'rb') as f:
         avito_json = json.load(f)
     avito_json_clear = []
@@ -19,12 +19,13 @@ def clear_avito_json(json_file):
             if t_p_url not in avito_unic_urls:
                 avito_unic_urls.append(t_p_url)
                 avito_json_clear.append(t_p_clear)
-
-    # for item in avito_json_clear:
-    #     print(item)
     print('\nCount items: {}'.format(len(avito_json_clear)))
-    with open('./data/{}_clear.json'.format(json_file), 'w', encoding='utf-8') as f:
-        json.dump(avito_json_clear, f, ensure_ascii=False)
+    if utf:
+        with open('./data/{}_clear.json'.format(json_file), 'w', encoding='utf-8') as f:
+            json.dump(avito_json_clear, f, ensure_ascii=False)
+    else:
+        with open('./data/{}_clear.json'.format(json_file), 'w') as f:
+            json.dump(avito_json_clear, f)
 
 
 if __name__ == '__main__':
